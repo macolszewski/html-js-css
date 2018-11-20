@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+.background-white {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.background-blue {
+    background-color: #4267b2;
+}
+
+.background-dark {
+    background-color: #333333;
+}
+
+.background-yellow {
+    background-color: #c7900c;
+}
+
+.profile-photo {
+    width: 25rem;
+    border-style: solid;
+    border: 0.5rem solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem 0.5rem #4267b2 ;
+}
+
+
+nav {
+    max-width: 110rem;  
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    font-display: bold;
+    justify-content: center;
+}
+
+nav li {
+    font-weight: bold;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 1.5rem;
+}
+
+li a:hover {
+    background-color: #29487d;
+}
+
+main {
+    max-width: 110rem;
+    min-height: calc(100vh - 14.5rem);
+    margin: auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+
+.toggle-background {
+    outline: none;
+    background-color: #4267b2;
+    border-radius: 1rem;
+    border-style: none;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    display: block;
+    margin: 2rem auto;
+    text-transform: capitalize;
+}
+
+.toggle-background:hover {
+    background-color: #29487d;
+    border-style: none;
+    cursor: pointer;
+}
+
+.toggle-background:focus {
+    border-style: none;
+    box-shadow: 0 0 0 0.2rem #bc243c;
+}
+
+.weather {
+    height: 15rem;
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 0.5rem solid #4267b2;
+    border-radius: 2rem;
+}
+
+.weather-conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+#description > div {
+    margin-top: 2rem;
+}
+
+.underline {
+    width: 15rem;
+    height: 1rem;
+    margin: 2rem auto 0 auto;
+    background-color: #4267b2;
+    border-radius: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    li > a {
+        padding: 2rem 5rem;
+    }
+    #description {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #description > div {
+        width: 30%;
+    }
+    .paragraph {
+        height: 25rem;
+    }
+}
